@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unes</title>
+    <link rel="stylesheet" href="{{ url_for('static' , filename='css/style.css')}}">
+</head>
+
+<body class="body2">
+    <div class="container">
+        <header>
+            <img src="{{ url_for('static' , filename='img/logo.png')}}" alt="logo">
+            <nav>
+                <ul>
+                    <li class="border-li"><a href="/index">Início</a></li>
+                    <li class="border-li"><a href="/quemsomos">Quem Somos</a></li>
+                    <li><a href="/contato">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+        {% block conteudo2%}
+        {% endblock %}
+        <footer>
+            <p>&copy; 2024 Unes universidade todos os direitos reservados.</p>
+        </footer>
+    </div>
+</body>
+
+</html>

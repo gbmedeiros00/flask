@@ -1,0 +1,2 @@
+FLASK_APP=paiton.py
+FLASK_ENV=development
